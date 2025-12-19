@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aryan Ubale | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<canvas id="matrixCanvas"></canvas>
+  <nav class="navbar">
+    <div class="nav-container">
+      
+      <a href="#" class="logo">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Aryan<span class="highlight">.dev</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        
+        <li><a href="#certifications">Certificates</a></li>
+        
+        
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button id="theme-btn" class="theme-btn" aria-label="Toggle Theme">
+        <svg class="icon sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="icon moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="badge">👋 Hi, I’m Aryan Ubale</div>
+        <h1>Building <span class="gradient-text">Digital</span><br><span class="outline-text">Experiences</span> that Matter.</h1>
+        <p class="hero-sub">Software Developer & Data Engineer specializing in scalable web applications.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="assets/resume/Aryan_Ubale_Resume.pdf" download class="btn outline">Download Resume</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>3+</b> <span>Experience</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><b>3+</b> <span>Projects</span></div>
+        </div>
+      </div>
+      <div class="hero-visual tilt">
+        <div class="card-bg"></div>
+        <div class="hero-card-3d">
+          <img src="assets/images/profile.jpg" alt="Aryan Ubale" class="profile-img">
+          <div class="float-badge top-right"><span>⚡</span> Full Stack</div>
+          <div class="float-badge bottom-left"><span>💻</span> Developer</div>
+        </div>
+        <div class="orbits">
+          <div class="float-icon icon-react"><img src="assets/icons/react.png" alt="React"></div>
+          <div class="float-icon icon-node"><img src="assets/icons/nodejs.png" alt="Node.js"></div>
+          <div class="float-icon icon-python"><img src="assets/icons/python.png" alt="Python"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlights">
+    <div class="highlight-grid">
+      <div class="highlight-card"><h3>3+</h3><p>Internships & Experience</p></div>
+      <div class="highlight-card"><h3>Full-Stack</h3><p>Frontend, Backend & APIs</p></div>
+      <div class="highlight-card"><h3>Top 50</h3><p>National Hackathon Finalist</p></div>
+    </div>
+  </section>
+
+  <section class="about-preview reveal" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am an Information Technology undergraduate based in Mumbai with hands-on experience in full-stack development, backend systems, and data-driven applications.</p>
+      <p>I have worked as a Software Developer Intern and MERN Stack Intern, where I built REST APIs, integrated third-party services, and collaborated in real-world engineering environments.</p>
+      <p>Currently, I am focusing on strengthening my foundations in system design, data engineering, and product-based software development roles.</p>
+    </div>
+  </section>
+
+  <section class="skills-marquee" id="skills">
+    <h2>Skills</h2>
+    <p class="skill-label">Programming Languages</p>
+    <div class="marquee-shell">
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <div class="skill-item"><img src="assets/icons/html.png" alt="HTML"><span>HTML</span></div>
+            <div class="skill-item"><img src="assets/icons/css.png" alt="CSS"><span>CSS</span></div>
+            <div class="skill-item"><img src="assets/icons/javascript.png" alt="JS"><span>JavaScript</span></div>
+            <div class="skill-item"><img src="assets/icons/typescript.png" alt="TS"><span>TypeScript</span></div>
+            <div class="skill-item"><img src="assets/icons/python.png" alt="Python"><span>Python</span></div>
+            <div class="skill-item"><img src="assets/icons/C++.png" alt="C++"><span>C++</span></div>
+          </div>
+          <div class="marquee-group">
+            <div class="skill-item"><img src="assets/icons/html.png" alt="HTML"><span>HTML</span></div>
+            <div class="skill-item"><img src="assets/icons/css.png" alt="CSS"><span>CSS</span></div>
+            <div class="skill-item"><img src="assets/icons/javascript.png" alt="JS"><span>JavaScript</span></div>
+            <div class="skill-item"><img src="assets/icons/typescript.png" alt="TS"><span>TypeScript</span></div>
+            <div class="skill-item"><img src="assets/icons/python.png" alt="Python"><span>Python</span></div>
+            <div class="skill-item"><img src="assets/icons/C++.png" alt="C++"><span>C++</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="skill-label">Frameworks & Tools</p>
+    <div class="marquee-shell">
+      <div class="marquee reverse">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <div class="skill-item"><img src="assets/icons/nodejs.png" alt="Node"><span>Node.js</span></div>
+            <div class="skill-item"><img src="assets/icons/react.png" alt="React"><span>React.js</span></div>
+            <div class="skill-item"><img src="assets/icons/API.png" alt="API"><span>REST APIs</span></div>
+            <div class="skill-item"><img src="assets/icons/git.png" alt="Git"><span>Git</span></div>
+            <div class="skill-item"><img src="assets/icons/github.png" alt="GitHub"><span>GitHub</span></div>
+          </div>
+          <div class="marquee-group">
+            <div class="skill-item"><img src="assets/icons/nodejs.png" alt="Node"><span>Node.js</span></div>
+            <div class="skill-item"><img src="assets/icons/react.png" alt="React"><span>React.js</span></div>
+            <div class="skill-item"><img src="assets/icons/API.png" alt="API"><span>REST APIs</span></div>
+            <div class="skill-item"><img src="assets/icons/git.png" alt="Git"><span>Git</span></div>
+            <div class="skill-item"><img src="assets/icons/github.png" alt="GitHub"><span>GitHub</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-immersive" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">Built as real-world systems, not demos</p>
+    <div class="project-row reveal">
+      <div class="project-visual"><img src="assets/images/reactnode.jpg" alt="Full Stack Pipeline"></div>
+      <div class="project-details">
+        <span class="project-tag completed">Completed</span>
+        <h3>Full-Stack Pipeline</h3>
+        <p class="project-desc">End-to-end architecture where React handles UI, Node.js manages routing, and FastAPI powers backend workflows.</p>
+        <div class="tech-pills"><span>React</span><span>Node</span><span>FastAPI</span><span>Python</span></div>
+      </div>
+    </div>
+    <div class="project-row reverse reveal">
+      <div class="project-visual"><img src="assets/images/arogyasetu.jpg" alt="Healthcare Platform"></div>
+      <div class="project-details">
+        <span class="project-tag progress">In Progress</span>
+        <h3>Arogya Setu</h3>
+        <p class="project-desc">Digital healthcare platform for patient records, authentication and appointment workflows.</p>
+        <div class="tech-pills"><span>Node</span><span>MongoDB</span><span>REST</span></div>
+      </div>
+    </div>
+    <div class="project-row reveal">
+      <div class="project-visual"><img src="assets/images/roadguard.jpg" alt="YOLO Road Hazard"></div>
+      <div class="project-details">
+        <span class="project-tag progress">In Progress</span>
+        <h3>Road Hazard Detection</h3>
+        <p class="project-desc">Real-time computer vision system detecting road hazards using YOLOv8 deep learning pipelines.</p>
+        <div class="tech-pills"><span>YOLOv8</span><span>PyTorch</span><span>OpenCV</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section reveal" id="experience">
+    <div class="container">
+      <h2 class="section-title">Career Milestones</h2>
+      <p class="section-sub">Verified experience and internship offer letters.</p>
+      <div class="docs-grid">
+        <div class="doc-card">
+          <div class="doc-header">
+            <div class="company-icon"><img src="assets/icons/bootcoding.png" alt="Bootcoding" class="company-logo"></div>
+            <div><h3>Bootcoding Pvt.Ltd.</h3><span class="role">Software Developer Intern</span></div>
+          </div>
+          <div class="doc-preview view-btn"> 
+            <img src="assets/images/offer1.jpg" alt="Offer Letter">
+            <div class="hover-overlay"><span>🔍 Click to Zoom</span></div>
+          </div>
+          <div class="doc-footer"><span class="date">Jan 2024 - Present</span><span class="status-badge">Active</span></div>
+        </div>
+        <div class="doc-card">
+          <div class="doc-header">
+            <div class="company-icon"><img src="assets/icons/vaayurobotics.png" alt="Vaayu" class="company-logo"></div>
+            <div><h3>Vaayu Robotics</h3><span class="role">Full Stack Intern</span></div>
+          </div>
+          <div class="doc-preview view-btn">
+            <img src="assets/images/offer2.jpg" alt="Offer Letter">
+            <div class="hover-overlay"><span>🔍 Click to Zoom</span></div>
+          </div>
+          <div class="doc-footer"><span class="date">Jun 2023 - Dec 2023</span><span class="status-badge completed">Completed</span></div>
+        </div>
+        <div class="doc-card">
+          <div class="doc-header">
+            <div class="company-icon"><img src="assets/icons/bluestock.png" alt="Bluestock" class="company-logo"></div>
+            <div><h3>Bluestock Fintech</h3><span class="role">SDE Intern</span></div>
+          </div>
+          <div class="doc-preview view-btn">
+            <img src="assets/images/offer3.png" alt="Offer Letter">
+            <div class="hover-overlay"><span>🔍 Click to Zoom</span></div>
+          </div>
+          <div class="doc-footer"><span class="date">Jan 2023 - May 2023</span><span class="status-badge completed">Completed</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cert-section reveal" id="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications & Achievements</h2>
+      <p class="section-sub">Technical milestones, hackathons, and course completions.</p>
+      <div class="swiper cert-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="cert-card wide tilt">
+              <div class="cert-visual view-btn">
+                <img src="assets/images/a2hackfest.jpg" alt="A2HackFest">
+                <div class="cert-overlay"><span class="cert-badge">🏆 Top 50</span><span>Tap to View</span></div>
+              </div>
+              <div class="cert-content"><h3>A2HackFest 2K25</h3><p class="issuer">AugmentAppz</p></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cert-card wide tilt">
+              <div class="cert-visual view-btn">
+                <img src="assets/images/python-bootcamp.jpg" alt="Python">
+                <div class="cert-overlay"><span class="cert-badge">📜 Course</span><span>Tap to View</span></div>
+              </div>
+              <div class="cert-content"><h3>Complete Python Bootcamp</h3><p class="issuer">Udemy</p></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cert-card wide tilt">
+              <div class="cert-visual view-btn">
+                <img src="assets/images/ai-entrepreneurship.jpg" alt="AI">
+                <div class="cert-overlay"><span class="cert-badge">🤖 AI Skill</span><span>Tap to View</span></div>
+              </div>
+              <div class="cert-content"><h3>AI for Entrepreneurship</h3><p class="issuer">Intel & Skill India</p></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cert-card wide tilt">
+              <div class="cert-visual view-btn">
+                <img src="assets/images/mern-internship.jpg" alt="MERN">
+                <div class="cert-overlay"><span class="cert-badge">💻 Internship</span><span>Tap to View</span></div>
+              </div>
+              <div class="cert-content"><h3>MERN Stack Internship</h3><p class="issuer">Pixerfect Solutions</p></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cert-card wide tilt">
+              <div class="cert-visual view-btn">
+                <img src="assets/images/sde-internship.jpg" alt="SDE">
+                <div class="cert-overlay"><span class="cert-badge">💼 SDE</span><span>Tap to View</span></div>
+              </div>
+              <div class="cert-content"><h3>Software Development Engineer</h3><p class="issuer">Bluestock Fintech</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <section class="contact-section reveal" id="contact">
+    <div class="contact-wrapper tilt">
+      <h2>Contact Me</h2>
+      <p class="contact-sub">Let’s collaborate and build something impactful.</p>
+      <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="017ab93c-eb47-4f28-a903-d57416182c63">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <div class="field"><input type="text" name="name" required placeholder=" "><label>Name</label></div>
+        <div class="field"><input type="email" name="email" required placeholder=" "><label>Email</label></div>
+        <div class="field"><textarea name="message" rows="4" required placeholder=" "></textarea><label>Message</label></div>
+        <button type="submit" class="submit-btn"><span>Send Message</span></button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </section>
+
+ <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <h3>Aryan.dev</h3>
+        <p>Building scalable systems, clean architectures,<br />and impactful digital products.</p>
+      </div>
+      
+      <div class="footer-socials">
+        <a href="https://instagram.com/aryan.exploree" target="_blank" class="social-icon instagram" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/aryan-ubale/" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        
+        <a href="https://github.com/AryanUbale7" target="_blank" class="social-icon github" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-1.54A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Aryan Ubale · All rights reserved</div>
+  </footer>
+
+  <div id="imageModal" class="modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="fullImage">
+    <div id="caption"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
