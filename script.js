@@ -289,3 +289,71 @@ navLinksItems.forEach(link => {
     bars[2].style.transform = "none";
   });
 });
+/* ================= ULTIMATE HACKER BOOT SEQUENCE ================= */
+const terminalWindow = document.querySelector(".terminal-window");
+const commandLog = document.getElementById("command-log");
+const warningBox = document.getElementById("warning-box");
+const finalPrompt = document.querySelector(".final-prompt");
+const preloader = document.getElementById("terminal-preloader");
+
+// Commands ki list
+const steps = [
+  { msg: "Connecting to server 192.168.0.1...", color: "text-green", delay: 200 },
+  { msg: "Verifying user credentials...", color: "text-green", delay: 400 },
+  { msg: "Encrypted handshake established.", color: "text-green", delay: 200 },
+  { msg: "Downloading repository data...", color: "text-green", delay: 500 },
+  { msg: "WARNING: Unstable connection detected!", color: "text-yellow", delay: 600 },
+  { msg: "Attempting to bypass firewall...", color: "text-green", delay: 300 },
+  { msg: "Firewall bypass successful.", color: "text-green", delay: 200 },
+  { msg: "Injecting payload...", color: "text-green", delay: 400 },
+  { msg: "CRITICAL ERROR: IP ADDRESS TRACED!", color: "text-red", delay: 800 },
+  { msg: "INITIATING SYSTEM LOCKDOWN...", color: "text-red", delay: 200 }
+];
+
+let stepIndex = 0;
+
+function runHackerSequence() {
+  if (stepIndex < steps.length) {
+    const step = steps[stepIndex];
+    
+    // Log add karo
+    const p = document.createElement("div");
+    p.classList.add("log-entry", step.color);
+    p.innerHTML = `> ${step.msg}`;
+    commandLog.appendChild(p);
+
+    // Agar Red color message hai to thoda shake karo
+    if (step.color === "text-red") {
+      terminalWindow.classList.add("danger");
+    }
+
+    stepIndex++;
+    setTimeout(runHackerSequence, step.delay); // Har msg ka alag delay
+  } else {
+    // 2. WARNING PHASE (Scary part)
+    setTimeout(() => {
+      terminalWindow.classList.add("danger"); // Red Border & Shake
+      warningBox.classList.remove("hidden"); // Bada Warning Box dikhao
+      commandLog.style.opacity = "0.2"; // Piche ka text dhundhla
+
+      // 3. RELIEF PHASE (Sab normal karo)
+      setTimeout(() => {
+        warningBox.innerHTML = "<h1 style='color:#0f0'>ACCESS GRANTED</h1><p>Welcome to Aryan.dev</p>";
+        warningBox.style.borderColor = "#0f0";
+        warningBox.style.boxShadow = "0 0 50px #0f0";
+        terminalWindow.classList.remove("danger"); // Shake band
+        terminalWindow.style.borderColor = "#0f0";
+        
+        // 4. Site Open
+        setTimeout(() => {
+          document.body.classList.add("loaded");
+        }, 1500);
+      }, 2500); // 2.5 second tak warning dikhegi
+    }, 500);
+  }
+}
+
+// Start
+window.addEventListener("load", () => {
+  runHackerSequence();
+});

@@ -9,6 +9,27 @@
 </head>
 
 <body>
+ <div id="terminal-preloader">
+    <div class="scanlines"></div>
+    <div class="glitch-overlay"></div> <div class="terminal-window">
+      <div class="terminal-header">
+        <span class="terminal-title">SYSTEM_OVERRIDE // ROOT ACCESS</span>
+      </div>
+      
+      <div class="terminal-body">
+        <div id="command-log"></div>
+        
+        <div id="warning-box" class="hidden">
+          <h1 class="glitch-text" data-text="SYSTEM COMPROMISED">SYSTEM COMPROMISED</h1>
+          <p>UNAUTHORIZED ACCESS DETECTED...</p>
+        </div>
+
+        <div class="final-prompt hidden">
+          <span class="user">root@aryan:~#</span> <span class="blink-cursor">_</span>
+        </div>
+      </div>
+    </div>
+  </div>
 <canvas id="matrixCanvas"></canvas>
   <nav class="navbar">
     <div class="nav-container">
