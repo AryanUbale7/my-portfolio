@@ -254,3 +254,38 @@ function drawMatrix() {
 
 // Animation start
 setInterval(drawMatrix, 35);
+/* ================= MOBILE MENU TOGGLE ================= */
+const menuBtn = document.getElementById('menu-btn');
+const navLinks = document.getElementById('nav-links');
+const navLinksItems = document.querySelectorAll('.nav-link');
+
+// 1. Toggle Menu on Click
+if (menuBtn) {
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    
+    // Animation for Bars (Optional X effect)
+    const bars = menuBtn.querySelectorAll('.bar');
+    if (navLinks.classList.contains('active')) {
+      bars[0].style.transform = "rotate(45deg) translate(5px, 5px)";
+      bars[1].style.opacity = "0";
+      bars[2].style.transform = "rotate(-45deg) translate(5px, -5px)";
+    } else {
+      bars[0].style.transform = "none";
+      bars[1].style.opacity = "1";
+      bars[2].style.transform = "none";
+    }
+  });
+}
+
+// 2. Close Menu when a Link is clicked
+navLinksItems.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    // Reset Hamburger Icon
+    const bars = menuBtn.querySelectorAll('.bar');
+    bars[0].style.transform = "none";
+    bars[1].style.opacity = "1";
+    bars[2].style.transform = "none";
+  });
+});
