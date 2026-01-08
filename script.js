@@ -357,3 +357,57 @@ function runHackerSequence() {
 window.addEventListener("load", () => {
   runHackerSequence();
 });
+window.addEventListener("load", () => {
+    const loader = document.getElementById("elite-loader");
+    const bar = document.querySelector(".loading-bar-fill");
+    const text = document.getElementById("step-text");
+    const hero = document.querySelector(".hero");
+
+    const steps = ["fetching_data", "checking_experience", "optimizing_ui", "ready"];
+    let count = 0;
+
+    const updateLoader = setInterval(() => {
+        if (count < steps.length) {
+            text.innerText = steps[count];
+            bar.style.width = `${(count + 1) * 25}%`;
+            count++;
+        } else {
+            clearInterval(updateLoader);
+            
+            // Step 1: Slide Up Loader
+            loader.classList.add("loader-finished");
+
+            // Step 2: Reveal Hero Content after a small delay
+            setTimeout(() => {
+                hero.classList.add("reveal-content");
+            }, 600);
+        }
+    }, 500);
+});
+// Jab terminal ka kaam khatam ho jaye
+setTimeout(() => {
+    const preloader = document.getElementById("terminal-preloader");
+    preloader.style.opacity = "0";
+    
+    setTimeout(() => {
+        preloader.classList.add("loader-finished"); // Ye space remove kar dega
+    }, 500);
+}, 3000); // 3 second baad
+window.addEventListener("load", () => {
+    const preloader = document.getElementById("terminal-preloader");
+    
+    // Maan lo terminal 3 second tak chalta hai
+    setTimeout(() => {
+        preloader.classList.add("loader-finished");
+        // Hero section ko top par lane ke liye extra safety
+        document.body.style.overflow = "auto"; 
+    }, 3500); 
+});
+window.addEventListener("scroll", () => {
+    const nav = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+});
