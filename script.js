@@ -411,9 +411,43 @@ window.addEventListener("scroll", () => {
         nav.classList.remove("scrolled");
     }
 });
- window.addEventListener("load", () => {
+
+
+  function hidePreloader() {
+    if (!preloader) return;
+    preloader.style.opacity = "0";
+    preloader.style.pointerEvents = "none";
+
     setTimeout(() => {
-      document.getElementById("preloader").style.opacity = "0";
-      document.getElementById("preloader").style.pointerEvents = "none";
-    }, 1800);
+      preloader.style.display = "none";
+    }, 600);
+  }
+
+  /* 1️⃣ DOM ready (mobile safe) */
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(hidePreloader, 1200);
   });
+
+  /* 2️⃣ HARD SAFETY (even if load never fires) */
+  setTimeout(hidePreloader, 3000);
+function hidePreloader() {
+  if (!preloader) {
+    console.error("Preloader not found");
+    return;
+  }
+
+  preloader.style.opacity = "0";
+
+  setTimeout(() => {
+    preloader.style.display = "none";
+    document.body.style.overflow = "auto";
+  }, 600);
+}
+
+/* Always run */
+window.addEventListener("load", () => {
+  setTimeout(hidePreloader, 1200);
+});
+
+/* HARD FAILSAFE */
+setTimeout(hidePreloader, 3000);
