@@ -451,18 +451,3 @@ window.addEventListener("load", () => {
 
 /* HARD FAILSAFE */
 setTimeout(hidePreloader, 3000);
-// Mobile Menu Toggle
-
-
-if (menuBtn && navLinks) {
-    menuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active'); // Menu kholega/band karega
-        menuBtn.classList.toggle('active'); // Button animation ke liye (optional)
-    });
-
-    // Link par click karne ke baad menu band ho jaye
-    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        menuBtn.classList.remove('active');
-    }));
-}
