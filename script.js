@@ -451,3 +451,29 @@ window.addEventListener("load", () => {
 
 /* HARD FAILSAFE */
 setTimeout(hidePreloader, 3000);
+
+/* ================= 5. PROJECT FILTERING ================= */
+document.addEventListener('DOMContentLoaded', () => {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project-row');
+
+  if (filterBtns.length > 0 && projects.length > 0) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        projects.forEach(project => {
+          const categories = project.getAttribute('data-category') ? project.getAttribute('data-category').split(' ') : [];
+          if (filter === 'all' || categories.includes(filter)) {
+            project.classList.remove('hide');
+          } else {
+            project.classList.add('hide');
+          }
+        });
+      });
+    });
+  }
+});
